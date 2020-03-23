@@ -15,15 +15,24 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+    
+    <style>
+        .fontBorderBlack {
+            text-shadow: -0.35px 0 black, 0 0.35px black, 0.35px 0 black, 0 -0.35px black;
+        }
+        .fontBorderWhite {
+            text-shadow: -0.35px 0 white, 0 0.35px white, 0.35px 0 white, 0 -0.35px white;
+        }
+    </style>
 
 </head>
 
-<body>
+<body style="background-color: black">
 
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="test.html">George's Place</a>
+      <a class="navbar-brand" href="test.html"><span class="fontBorderBlack" style="color: red">George’s</span> <span class="fontBorderBlack"style="color: blue">Place</span></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,7 +67,45 @@
     </div>
   </nav>
     
-    <footer class="fixed-bottom py-5 bg-dark">
+    <div class="container rounded" style="background-color: black; color: white">
+        <div>
+            <h4 class="m-5 text-center">Welcome to </h4><h1 class="m-5 text-center"><span style="font-style: italic; color: red">George’s</span> <span style="font-style: italic; color: blue">Place</span></h1>
+        </div>
+        <div class="m-5 pb-5">
+            <div class="row container">
+                <div class="col-8">
+                    <p>Founded in the 90’s by my Dad, George. The historic neon, gifted by my Mom, has traveled
+                        all across the Midwest; from bachelor pads, to suburban basements, to fraternity houses,
+                        and finally nestled inside the renowned Southport Corridor overlooking Wrigley Field.
+                        George’s Place is a historical cornerstone of the community and a frontrunner for
+                        advocating “the late nights”. We are here to provide media we know you will enjoy.</p>
+                </div>
+                <div class="col-4">
+                    <img align="right" class="img-responsive pl-2" style="width: 100%" src="images/FamPicCensored.jpg">
+                </div>
+            </div>
+            <h4 class="text-center m-5">We are happy to have you. <span style="font-style: italic; font-weight: bold">Stay a while.</span></h4>
+            <div class="row container mt-5">
+                <div class="col-4">
+                    <img align="left" class="img-responsive mb-5 pr-3" style="width: 100%" src="images/GPMarch2020.jpg">
+                </div>
+                <div class="col-8">
+                    <p>About Us: <br>
+                    When it is deemed necessary to give you a quick background of your favorite George’s
+                    Place regulars, we will. Until then, hit us up on our social media feeds.
+                    Want to reach out? Leave us a 5 Star review on <a href="http://www.google.com">Google</a>.<br>
+                    Twitter: <a href="http://www.twitter.com/itsgeorgesplace">@itsGeorgesPlace</a><br>
+                    Instagram: <a href="http://www.instagram.com/itsgeorgesplace">@itsGeorgesPlace</a><br>
+                    Facebook: <a href="https://www.facebook.com/groups/itsgeorgesplace">George’s Place</a><br>
+                    Twitch: <a href="http://www.twitch.tv/itsgeorgesplace">itsgeorgesplace</a><br>
+                    Youtube: <a href="http://www.youtube.com/georgesplace">GeorgesPlace</a><br></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; George's Place, LLC</p>
         </div>

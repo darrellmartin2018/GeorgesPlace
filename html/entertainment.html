@@ -8,20 +8,35 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>George's Place - Entertainment</title>
+  <title>George's Place</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+    
+    <style>
+        .navbarColor {
+            background-color: #35363A;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .fullHeight {
+            height: 100%;
+            background-color: white;
+        }
+        
+    </style>
 
 </head>
 
-<body>
+<body style="height: 100%; background-color: black;">
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar navbarColor fixed-top">
     <div class="container">
       <a class="navbar-brand" href="test.html"><span class="fontBorderBlack" style="color: red">George’s</span> <span class="fontBorderBlack"style="color: blue">Place</span></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,9 +52,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="sports.html">Sports</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="music.html">Music</a>
           </li>
             <li class="nav-item">
             <a class="nav-link" href="food.html">Food</a>
@@ -58,11 +70,15 @@
     </div>
   </nav>
     
-    <footer class="fixed-bottom py-5 bg-dark">
+    <div class="container fullHeight" style="width: 70%">
+        
+    </div>
+    
+    
+    <footer class="py-5 navbarColor">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; George's Place, LLC</p>
         </div>
-    <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->

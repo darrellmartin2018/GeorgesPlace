@@ -19,17 +19,66 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <!-- minify -->
+<!--    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />-->
+    <!-- latest -->
+<!--    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />-->
+    <!-- core style only -->
+<!--    <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />-->
+    
     <style>
         .navbarColor {
             background-color: #35363A;
         }
+        
+        body {
+            padding-top:0px;
+            margin-top: 0px;
+            background: black;
+            height: 100%;
+        }
+        
+        .headerImg { 
+            width:100%; 
+            text-align:center; 
+            border-bottom: 2px solid #cec5ba; 
+            line-height:0.1em; 
+        } 
+        
+        .headerImg img { 
+            top:0;
+        }
+        
+        hr {
+            vertical-align: middle;
+            text-align: center;
+        }
+        
+        .fullHeight {
+            height: 100%;
+            background-color: white;
+        }
+        
     </style>
 
 </head>
 
 <body>
+    <div style="position: relative;">
+        <div class="row text-center">
+            <div class="col-3" style="margin: auto;">
+                <hr size=8 style="border: 2px solid; border-color: white; width: 70%; border-color: white; color: white; background-color: white;">
+            </div>
+            <div class="col-6">
+                <img style="width: 100%;" src="images/George's4K.gif">
+            </div>
+            <div class="col-3" style="margin: auto;">
+                <hr size=8 class="" style="border: 2px solid; border-color: white; width: 70%; border-color: white; color: white; background-color: white;">
+            </div>
+        </div>
+    </div>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar navbarColor fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar navbarColor sticky-top">
     <div class="container">
       <a class="navbar-brand" href="test.html"><span class="fontBorderBlack" style="color: red">George’s</span> <span class="fontBorderBlack"style="color: blue">Place</span></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,84 +112,25 @@
     </div>
   </nav>
 
-  <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('construction.jpeg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Loading...</h3>
-            <p>We are under construction</p>
-          </div>
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Second Slide</h3>
-            <p>This is a description for the second slide.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+  <div class="text-center my-4">
+        <h1 style="color: white; font-style: italic;">STREAMS</h1>
+        <hr size=8 style="border: 1.5px solid; border-color: white; width: 50%; border-color: white; color: white; background-color: white;">
     </div>
-  </header>
+    <div class="text-center" style="width: 100%">
+        <div id="twitch-embed"></div>
 
-  <!-- Page Content -->
-  <div class="container">
+            <!-- Load the Twitch embed script -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
-    <h1 class="my-4">Welcome to George's Place</h1>
-
-    <!-- Marketing Icons Section -->
-    <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Law</h4>
-          <div class="card-body">
-            <p class="card-text">Learn how to legally sleep with someone's wife</p>
-          </div>
-          <div class="card-footer">
-            <a href="law.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Podcasts</h4>
-          <div class="card-body">
-            <p class="card-text">Listen to us talk about how Mizzou basketball continuously let's their fans down</p>
-          </div>
-          <div class="card-footer">
-            <a href="entertainment.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header">Sports</h4>
-          <div class="card-body">
-            <p class="card-text">Watch videos of Mizzou basketball letting their fans down</p>
-          </div>
-          <div class="card-footer">
-            <a href="sports.html" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+            <script type="text/javascript">
+              new Twitch.Embed("twitch-embed", {
+                width: 854,
+                height: 480,
+                channel: "itsgeorgesplace",
+              });
+            </script>
     </div>
-    <!-- /.row -->
-
-  </div>
   <!-- /.container -->
 
   <!-- Footer -->

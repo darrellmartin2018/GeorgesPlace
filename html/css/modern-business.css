@@ -20,3 +20,13 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.dropdown-item{
+    color:#fff;
+}
+.dropdown-menu {
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

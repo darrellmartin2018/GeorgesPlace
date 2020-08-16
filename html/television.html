@@ -33,6 +33,17 @@
             margin-bottom: 100px;
         }
 
+        .dropdown-item{
+            color:#fff;
+        }
+
+        .dropdown-menu {
+          border: none;
+          border-radius: 0;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+
     </style>
 
 </head>
@@ -51,8 +62,15 @@
           <li class="nav-item">
             <a class="nav-link" href="law.html">Law</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="entertainment.html">Entertainment</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle navbar-dark navbarColor" href="entertainment.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Entertainment
+            </a>
+            <div class="dropdown-menu navbar-dark navbarColor" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item navbarColor" href="music.html">Music</a>
+              <a class="dropdown-item navbarColor" href="television.html">Television</a>
+              <a class="dropdown-item navbarColor" href="movies.html">Movies</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="sports.html">Sports</a>

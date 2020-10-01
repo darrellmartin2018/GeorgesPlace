@@ -23,7 +23,16 @@
         .navbarColor {
             background-color: #35363A;
         }
-        
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .fullHeight {
+            height: 100%;
+            background-color: white;
+            margin-bottom: 100px;
+        }
+
         .dropdown-item{
             color:#fff;
         }
@@ -34,11 +43,12 @@
           -webkit-box-shadow: none;
           box-shadow: none;
         }
+
     </style>
 
 </head>
 
-<body style="background-color: black">
+<body style="height: 100%; background-color: black;">
 
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar navbarColor fixed-top">
@@ -82,16 +92,14 @@
     </div>
   </nav>
 
-    <article>
-            <div class="text-center my-4">
-                <h1 style="color: white">STORE</h1>
-                <hr size=8 style="border: 1.5px solid; border-color: white; width: 50%; border-color: white; color: white; background-color: white;">
-                <p style="color: white; font-size: 12px;">Merchandise Store is Coming Soon!</p>
-            </div>
-			<div class="m-5 px-5" id="image">
-				<img class="img" style="width: 100%" src="construction.jpeg" alt="Under Construction"/>
-			</div>
-    </article>
+    <div class="text-center my-4">
+        <h1 style="color: white">TELEVISION</h1>
+        <hr size=8 style="border: 1.5px solid; border-color: white; width: 50%; border-color: white; color: white; background-color: white;">
+        <p style="color: white; font-size: 12px;">Thoughts on TV</p>
+    </div>
+    <div class="container fullHeight" style="width: 70%">
+
+    </div>
 
 
     <footer class="py-3 navbarColor">

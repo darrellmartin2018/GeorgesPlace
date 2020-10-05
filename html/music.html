@@ -47,9 +47,19 @@
         .article_with_spotify {
             height: 100%;
             background-color: black;
-            margin-bottom: 700px;
+            margin-bottom: 100px;
         }
-        
+
+        h6 {
+          padding-left: 20px;
+        }
+
+        /* mobile specific formatting */
+        @media screen and (max-width: 767px) {
+          .article_with_spotify {margin-bottom: 600px;}
+          .h6 {padding-left: 10px;}
+        }
+
         .carousel{
           max-height: 768px;
           min-width: auto;
@@ -107,21 +117,97 @@
   <div class="text-center my-4">
       <h1 style="color: white">MUSIC</h1>
       <hr size=8 style="border: 1.5px solid; border-color: white; width: 50%; border-color: white; color: white; background-color: white;">
-      <p style="color: white; font-size: 12px;">Tunes and opinions presented by patrons of George's Place</p>
+      <p style="color: white; font-size: 12px;"><i>Tunes and opinions presented by patrons of George's Place</i></p>
   </div>
 
-  <!-- Article1 -->
+  <!-- George's Pick of the Week -->
   <div class="container article_with_spotify" style="width: 90%">
     <p class="font-weight-bold text-center" style="color: white"> Welcome to the music portion of the George’s Place website. As the resident guy who spends a bit too much time on SoundCloud and Apple Music just keeping my ear to the ground for the next big trend in music, we figured I should take the reins on writing the music blog here. If you’re looking to see exactly what has been dominating the Bluetooth speaker at GP, you’ve come to the right place. If not, what are you expecting to find? You don’t go to China Town to get a good kielbasa.</p>
     <h2 class="font-weight-bold text-center" style="color: white"><span class="fontBorderBlack" style="color: red">George’s</span> <span class="fontBorderBlack"style="color: blue">Place </span>Pick of the Week</h2>
-    <p class="font-weight-light"> Ethereal’s new  album E2 is something else. Remember listening to Ethereal x Carti tracks on Soundcloud back in 2016? This album brings that feeling back in a big way. With the first few tracks seamlessly blending into each other, this album is a collection of silky synth tracks that take you to a different headspace. Although the charm of the album starts to wane as it goes on, you’re in for a treat for the first half or so. It’s hard to listen to this album and not yearn to be standing in the corner of a kitchen where you are too afraid to talk to girls at the party.</p>
+    <p class="font-weight-light">
+      Ethereal’s new  album E2 is something else. Remember listening to Ethereal x Carti tracks on Soundcloud back in 2016? This album brings that feeling back in a big way. With the first few tracks seamlessly blending into each other,
+      this album is a collection of silky synth tracks that take you to a different headspace.
+      Although the charm of the album starts to wane as it goes on, you’re in for a treat for the first half or so.
+      It’s hard to listen to this album and not yearn to be standing in the corner of a kitchen where you are too afraid to talk to girls at the party.
+    </p>
 
-    <div class="container embed-responsive embed-responsive-16by9 center-block" style="height: 75%; margin-bottom: 50px;">
+    <div class="container embed-responsive center-block" style="height: 75%">
       <iframe src="https://open.spotify.com/embed/album/3x6CYgqfY4EjgxXTOxieaN" max-width:853px; max-height:480px; frameborder="0"; allowtransparency="True" allow:"encrypted-media"></iframe>
     </div>
+  </div>
+
+  <!-- What's on the Horizon (Hoodrich article) -->
+  <div class="text-center my-4">
+      <h2 class="font-weight-bold text-center" style="color: white"><span class="fontBorderBlack" style="color: orange">What's</span> <span class="fontBorderBlack"style="color: yellow">on the </span> <span class="fontBorderBlack" style="color: orange"> Horizon</h2>
+      <hr size=8 style="border: 1.5px solid; border-color: white; width: 50%; border-color: white; color: white; background-color: white;">
+      <p class="font-weight-light" style="padding: 10px">In a time where there isn’t a whole lot to do aside from texting your high school ex something like “Remember when we went to that restaurant/bowling alley place with ur fam? I miss that lol”, in a last ditch effort to get it in, we really need something to look forward to. Luckily for us, we have some good music on the horizon.</p>
+
+      <h3 class="font-weight-bold text-center" style="color: white">Designer Drugz 4 - Hoodrich Pablo Juan</h3>
+      <p class="font-weight-light">
+        Nobody has been dropping more consistently and diligently than PJ (that’s what I call him, I’m pretty quirky xD). If this name is sounding unfamiliar to you, you’ve almost certainly heard some of his music before. He’s got some well known tracks like
+      </p>
+      <h6 class="font-weight-bold text-left" style="color: white">We Dont Luv Em:</h6>
+      <div class="embed-responsive embed-responsive-21by9" style="height: 75%">
+        <iframe src="https://www.youtube.com/embed/BmKNq2_R9TI" max-width:853px; max-height:480px; allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <p class="font-weight-light">
+        <span class="font-weight-bold">But aside from mainstream appeal,</span>
+        <br>
+        PJ is an artist whose whole discography is full of diamonds in the rough. Although there have been some bed shit tracks, mainly being those that come off as a ratchet love ballad, he is always someone to look forward to. With that being said, he has rumored the release of Designer Drugz 4 over social media.
+      </p>
+      <p class="font-weight-light">
+        <span class="font-weight-bold">How does this differ from his normal releases?</span>
+        <br>
+        First, stop asking so many questions. Second, the Designer Drugz releases embody exactly what I love about his music. These projects have the X factor. They’re energetic. They make you want to go study for your midterms. They make you feel like your life is more interesting than it is. They make you want to drive a Lamborghini off Navy Pier.
+      </p>
+      <div class="embed-responsive embed-responsive-21by9" style="height: 75%">
+        <iframe src="https://www.youtube.com/embed/4zmFzSVI5gc" max-width:853px; max-height:480px; allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <p class="font-weight-light">
+        <span class="font-weight-bold">Absolute electric factory.</span> Although we haven’t got a concrete release date on this project, just the mere mention has me needing to change out my boxer briefs.
+      </p>
+  </div>
+
+  <!-- Carti Article -->
+  <div class="text-center my-4">
+      <h2 class="font-weight-bold text-center" style="color: purple">Carti <span class="fontBorderBlack" style="color: red">Watch</span></h2>
+      <hr size=8 style="border: 1.5px solid; border-color: white; width: 50%; border-color: white; color: white; background-color: white;">
+      <p class="font-weight-light" style="padding: 10px"><span class="font-weight-bold">The year is 2049. You are in your fallout shelter. </span>Your backup generator died a few weeks ago. A candle flickers as you dig a spoon deep into a can of pinto beans for dinner. You begin to operate your hand crank radio to get updates on the outside world. Something… anything. All you hear coming from the muzzled static is @ MEH coming over the last radio signal. You remember when Carti had been rumoring the drop of Whole Lotta Red (WLR) and chuckle to yourself. <span class="font-weight-bold">How foolish to assume it would ever drop.</span></p>
+      <br>
+      <p class="font-weight-light">
+        Is that dramatic? Analysts at the research department of George’s Place have been reporting that this could become reality at the current course we are running.
+      <p>
+      <p class="font-weight-light">
+        When it comes to absolute favorites to bump at GP, Uzi and Carti take the cake by a pretty wide margin. Uzi dropped Eternal Atake (although a bit lackluster), which was a massive win for the little soldiers in each of us fighting on for fabled releases. But that leaves the question: Where the hell is WLR?
+      </p>
+      <br>
+      <p class="font-weight-light">
+        When @ MEH dropped, Carti’s Twitter seemed to be buzzing with cryptic hints at a release:
+      </p>
+      <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">. MoNDaY</p>&mdash; 💋🧛🏿‍♀️ (@playboicarti) <a href="https://twitter.com/playboicarti/status/1250864457804320771?ref_src=twsrc%5Etfw">April 16, 2020</a></blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <br>
+      <p class="font-weight-light">
+        What the hell did he mean by this? The worlds most prominent figures in the field of cryptology have yet to decipher what he could’ve meant. I sure as hell thought we would be seeing a release.
+      </p>
+
+      <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Red is MY fav album . ❤️ of mine .</p>&mdash; 💋🧛🏿‍♀️ (@playboicarti) <a href="https://twitter.com/playboicarti/status/1252402860110737410?ref_src=twsrc%5Etfw">April 21, 2020</a></blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      <p class="font-weight-light">
+        <span class="font-weight-bold">This Tweet pains me to even see at this point.</span>
+        <br>
+        This cruel game he is playing with our fragile hearts is going too far. It all seemed so promising that we were going to get something by the end of April. Hell, I was thinking by May we would at least have something… but here we are. Is this cold summer of no Carti tracks going to ever end? We aren’t even seeing any good leaks coming out at this point.
+        <br></br>
+        Although things are looking bleak, we will be keeping you all posted with whatever WLR news that may come out. Even if it’s a cryptic Instagram story that is just a chain of emojis laid over a black background, you can bet your ass that we are going to be doing a deep dive on what this could possibly mean coming from one of the greatest musical minds to grace the world with his gift since Beethoven.
+      </p>
 
   </div>
 
+
+  <!-- Standard footer -->
     <footer class="py-3 navbarColor">
         <div class="container">
             <div class="row text-center my-3" style="width: 60%; margin: 0 auto; ">

@@ -23,10 +23,14 @@
         .navbarColor {
             background-color: #35363A;
         }
-        html, body {
+
+        html,body {
+            padding-top:0px;
+            margin-top: 0px;
+            background: black;
             height: 100%;
-            margin: 0;
         }
+
         .fullHeight {
             height: 100%;
             background-color: white;
@@ -41,6 +45,25 @@
           border-radius: 0;
           -webkit-box-shadow: none;
           box-shadow: none;
+        }
+
+        .embed_junk {
+            margin-bottom: 50px;
+        }
+
+        .apple_podcast_junk {
+          height: 50%;
+        }
+
+        .spotify_podcast_junk {
+          height: 30%;
+        }
+
+        /* mobile specific formatting */
+        @media screen and (max-width: 767px) {
+          .embed_junk {margin-bottom: 25px;}
+          .apple_podcast_junk {height: 75%;}
+          .spotify_podcast_junk {height: 40%}
         }
 
     </style>
@@ -92,8 +115,18 @@
         <hr size=8 style="border: 1.5px solid; border-color: white; width: 50%; border-color: white; color: white; background-color: white;">
         <p style="color: white; font-size: 12px;">The Full Collection of Audio Recordings</p>
     </div>
-    <div class="container fullHeight" style="width: 70%">
 
+    <!-- Apple Podcasts -->
+    <div class="container embed-responsive center-block embed_junk apple_podcast_junk" style="width: 90%;">
+      <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0"; style="width:100%;max-width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/georges-place-podcast/id1573471245"></iframe>
+    </div>
+    <!-- Spotify Podcasts -->
+    <div class="container embed-responsive center-block embed_junk spotify_podcast_junk" style="width: 90%">
+      <iframe src="https://open.spotify.com/embed/show/0a70LCf63u1HLoE91fzi7y?theme=0" width="100%" style="width:100%;max-width:100%;overflow:hidden;background:transparent;"allow="encrypted-media"></iframe>
+    </div>
+    <!-- Soundcloud Podcasts -->
+    <div class="container embed-responsive center-block embed_junk" style="height: 50%; width: 90%">
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1073872642&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/itsgeorgesplace" title="George&#x27;s Place" target="_blank" style="color: #cccccc; text-decoration: none;">George&#x27;s Place</a> · <a href="https://soundcloud.com/itsgeorgesplace/coming-soon-georges-place-season-1" title="Coming Soon: George&#x27;s Place Season 1" target="_blank" style="color: #cccccc; text-decoration: none;">Coming Soon: George&#x27;s Place Season 1</a></div>
     </div>
 
 

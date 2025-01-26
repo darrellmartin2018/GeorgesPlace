@@ -1,6 +1,6 @@
 .fa {
     padding: 10px;
-    font-size: 15px;
+    font-size: 10px;
     width: 35px;
     text-align: center;
     margin: 5px 2px;
@@ -29,12 +29,8 @@
     background: #6441a5;
     color: white;
 }
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
 .footerText {
-    font-size: 18px;
+    font-size: 10px;
 }
 .linkColor {
     color: #9a9b9d;
